@@ -14,7 +14,7 @@ namespace DataGrid.Standart.PeopleManager
     {
         private IPeopleStorage peopleStorage;
         private readonly ILogger logger;
-        private const string StopwatchTemplate = "{} выполнялся {} мс";
+        private const string StopwatchTemplate = "{0} выполнялся {1} мс";
 
         public PeopleManager(IPeopleStorage peopleStorage, ILogger logger)
         {
@@ -31,7 +31,7 @@ namespace DataGrid.Standart.PeopleManager
             var result = await peopleStorage.AddAsync(person);
 
             stopwatch.Stop();
-            logger .LogInformation(string.Format(StopwatchTemplate, nameof(AddAsync), stopwatch.ElapsedMilliseconds));
+            logger.LogInformation(string.Format(StopwatchTemplate, nameof(AddAsync), stopwatch.ElapsedMilliseconds));
             return result;
         }
 
