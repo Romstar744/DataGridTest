@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+	  <PackageId>PKGH.DataGrid.Standart.Storage.Memory</PackageId>
+	  <Version>1.0.0</Version>
+	  <Authors>Roman</Authors>
+	  <Company>PKGH</Company>
+	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DataGrid.Standart.Contracts\DataGrid.Standart.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>
